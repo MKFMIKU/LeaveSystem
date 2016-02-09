@@ -1,0 +1,23 @@
+{
+  "name": "leavesystem",
+  "version": "1.0.0",
+  "description": "An open source Express project for JXNU's students ask for a leave",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MKFMIKU/LeaveSystem.git"
+  },
+  "author": "MKFMIKU",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MKFMIKU/LeaveSystem/issues"
+  },
+  "homepage": "https://github.com/MKFMIKU/LeaveSystem#readme"
+}
