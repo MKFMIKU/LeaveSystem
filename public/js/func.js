@@ -1,16 +1,15 @@
 $("#send").click(function(){
     var applydata={
         name:$("input#name").val(),
-        numberid:$("input#number").val(),
-        class:$("#class").val(),
+        number_id:$("input#number").val(),
+        class_id:$("#class").val(),
         reason:$("#reason").val(),
-        address:$("input#address").val(),
-        phone:$("input#phone").val(),
-        time:$("input#time").val()
+        cost:$("#cost").val(),
+        address:$("#address").val()
     };
     $.ajax({
         type:"POST",
-        url:"push",
+        url:"apply",
         data:applydata,
         error:function(err){
             alert(err);

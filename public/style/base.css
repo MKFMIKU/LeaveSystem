@@ -1,0 +1,7 @@
+html,body {
+    background-color: #FCFAF2;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    background-image: url("../image/texture.png");
+}
