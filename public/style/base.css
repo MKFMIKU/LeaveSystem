@@ -2,6 +2,31 @@ html,body {
     background-color: #FCFAF2;
     height: 100%;
     width: 100%;
+    margin-top: 2%;
+    padding: 0;
     overflow: hidden;
+    text-align: center;
+    font-family: "Arial", "Microsoft YaHei", "黑体", "宋体", sans-serif;
     background-image: url("../image/texture.png");
+}
+
+#apply {
+    margin: auto 10%;
+}
+
+input {
+    width: 100%;
+    padding: 20% 20%;
+    display: block;
+}
+
+legend {
+    font-size: 1.6rem;
+}
+
+.button-error {
+    color: white;
+    border-radius: 4px;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    background: rgb(202, 60, 60);
 }

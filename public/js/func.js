@@ -1,4 +1,4 @@
-$("#send").click(function(){
+function send() {
     var applydata={
         name:$("input#name").val(),
         number_id:$("input#number").val(),
@@ -7,15 +7,19 @@ $("#send").click(function(){
         cost:$("#cost").val(),
         address:$("#address").val()
     };
-    $.ajax({
-        type:"POST",
-        url:"apply",
-        data:applydata,
-        error:function(err){
-            alert(err);
-        },
-        success:function(data){
-            alert(data);
-        }
-    });
-});
+    if (!applydata.name || !applydata.number_id) {
+        alert("请填写红色部分!");
+    } else {
+        $.ajax({
+            type: "POST",
+            url: "apply",
+            data: applydata,
+            error: function (err) {
+                $("#send").text("Wrong");
+            },
+            success: function (data) {
+                alert(data);
+            }
+        });
+    }
+}
