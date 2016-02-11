@@ -7,19 +7,20 @@ function send() {
         cost:$("#cost").val(),
         address:$("#address").val()
     };
-    if (!applydata.name || !applydata.number_id) {
-        alert("请填写红色部分!");
-    } else {
-        $.ajax({
-            type: "POST",
-            url: "apply",
-            data: applydata,
-            error: function (err) {
-                $("#send").text("Wrong");
-            },
-            success: function (data) {
-                alert(data);
+    if (!(!applydata.name || !applydata.number_id)) $.ajax({
+        type: "POST",
+        url: "apply",
+        data: applydata,
+        error: function (err) {
+            console.log(err);
+            $("#send").text("失败");
+        },
+        success: function (data) {
+            if (data) {
+                $("#send").text("成功");
             }
-        });
+        }
+    }); else {
+        alert("请填写红色部分!");
     }
 }

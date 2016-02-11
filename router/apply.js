@@ -28,7 +28,7 @@ router.post('/apply', function (req, res) {
                 }
                 else{
                     console.log(result);
-                    res.status(500).end("OK");
+                    res.end('1');
                 }
             });
         connection.release();
