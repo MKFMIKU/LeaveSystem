@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="images/favicon.ico" type="image/x-icon" rel=icon>
+    <link href="style/base.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<title>JXNU--请假管理</title>
+    <!--[if lte IE 8]>
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-old-ie-min.css">
+    <![endif]-->
+    <!--[if gt IE 8]><!-->
+    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/grids-responsive-min.css">
+    <!--<![endif]-->
+</head>
+<body>
+	<div id="apply">
+	<form class="pure-form pure-form-stacked">
+    <fieldset>
+        <legend>JXNU--学生请假条</legend>
+        <div class="pure-g">
+            <div class="pure-u-1 pure-u-md-1-3">
+                <label for="name">姓名</label>
+                <input id="name" type="text" required>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <label for="number">学号</label>
+                <input id="number" type="number" required>
+            </div>
+        </div>
+                <label for="number">班级</label>
+                <select id="class">
+    <option value="1">15级计算机科学与技术（师范）1班         </option>
+    <option value="2">15级计算机科学与技术（师范）2班         </option>
+    <option value="3">15级计算机科学与技术（正大学子）班      </option>
+    <option value="4">15级计算机科学与技术1班                 </option>
+    <option value="5">15级计算机科学与技术2班                 </option>
+    <option value="6">15级网络工程1班                         </option>
+    <option value="7">15级网络工程2班                         </option>
+    <option value="8">15级物联网1班                           </option>
+    <option value="9">15级物联网2班                           </option>
+    <option value="10">15级计算机科学与技术（师范）3班         </option>
+    </select>
+                <label for="reason">事由</label>
+                <input id="reason" type="text" >
+        <div class="pure-g">
+             <div class="pure-u-1 pure-u-md-1-3">
+                <label for="address">目的地</label>
+                <input id="address" type="text" placeholder="请假去的地方" required>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-3">
+                <label for="cost">时间</label>
+                <input id="cost" type="text" placeholder="起始结束时间" required>
+            </div>
+        </div>
+    </fieldset>
+        <h2 class="pure-button pure-button-primary" id="send" onClick="send()" type="submit">提交</h2>
+    </form>
+    </div>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/func.js"></script>
+</body>
+</html>
