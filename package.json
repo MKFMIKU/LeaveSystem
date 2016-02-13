@@ -1,25 +1,20 @@
 {
-  "name": "leavesystem",
-  "version": "1.0.0",
-  "description": "An open source Express project for JXNU's students ask for a leave",
-  "main": "app.js",
-  "dependencies": {
-    "body-parser": "^1.14.2",
-    "express": "^4.13.4",
-    "mysql": "^2.10.2"
-  },
-  "devDependencies": {},
+  "name": "App",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "node app.js"
+    "start": "node ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/MKFMIKU/LeaveSystem.git"
-  },
-  "author": "MKFMIKU",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/MKFMIKU/LeaveSystem/issues"
-  },
-  "homepage": "https://github.com/MKFMIKU/LeaveSystem#readme"
+  "dependencies": {
+    "body-parser": "~1.13.2",
+    "cookie-parser": "~1.3.5",
+    "debug": "~2.2.0",
+    "ejs": "~2.3.3",
+    "express": "~4.13.1",
+    "express-session": "^1.13.0",
+    "morgan": "~1.6.1",
+    "mysql": "^2.10.2",
+    "passport": "^0.3.2",
+    "serve-favicon": "~2.3.0"
+  }
 }

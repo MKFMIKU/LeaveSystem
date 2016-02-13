@@ -24,3 +24,25 @@ function send() {
         alert("请填写红色部分!");
     }
 }
+
+$("#auth").click(function () {
+    var authdata = {
+        user: $("#user").val(),
+        pass: $("#pass").val()
+    };
+    if (!authdata.user || authdata.pass) {
+        $.ajax({
+            type: "POST",
+            url: "login",
+            data: authdata,
+            success: function (data) {
+                if (data == "wa") {
+                    $("#auth").text("密码错误");
+                    $("#auth").css("background-color", "#E42222");
+                } else {
+                    window.location.href = "admin";
+                }
+            }
+        });
+    }
+});
